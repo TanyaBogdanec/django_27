@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Working Profile</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+    <body>
+        <h1 class='title_page'>{{ all_working_profile.name }}</h1>
+        <img src="{{ all_working_profile.profile_photo.url }}" alt='Profile photo'/>
+    </body>
+</html>
